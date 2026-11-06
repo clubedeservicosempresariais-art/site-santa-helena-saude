@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Helena Saúde - Plano de Saúde PME / MEI</title>
+</head>
+<body style="background-color: #f4f6f9; font-family: system-ui, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px;">
+
+    <div style="background-color: white; padding: 35px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); max-width: 460px; width: 100%; border: 1px solid #e2e8f0;">
+
+        <span style="background-color: #e0f2fe; color: #0369a1; font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 9999px; display: inline-block; margin-bottom: 15px; letter-spacing: 0.5px; text-transform: uppercase;">
+            Simulação Online Gratuita
+        </span>
+
+        <h2 style="color: #0f172a; margin: 0 0 8px 0; font-size: 26px; font-weight: 800; line-height: 1.2;">
+            Santa Helena Saúde<br><span style="color: #0284c7; font-size: 20px; font-weight: 600;">Plano de Saúde PME / Empresarial</span>
+        </h2>
+
+        <p style="color: #475569; font-size: 15px; line-height: 1.6; margin-bottom: 22px;">
+            Economize até <strong>40% na mensalidade</strong> do seu plano atual utilizando o seu <strong>CNPJ ou MEI</strong>. Tabelas exclusivas para a região do ABC Paulista!
+        </p>
+
+        <div style="background-color: #f8fafc; padding: 15px; border-radius: 10px; margin-bottom: 25px; border-left: 4px solid #0284c7;">
+            <h4 style="margin: 0 0 10px 0; color: #1e293b; font-size: 14px; font-weight: 700;">Diferenciais da Operadora no ABC:</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; color: #334155; font-size: 14px; display: flex; flex-direction: column; gap: 8px;">
+                <li>🏢 Contratação facilitada a partir de 2 vidas</li>
+                <li>🏥 Rede Hospitalar Própria (Santo André e São Bernardo)</li>
+                <li>🩺 Telemedicina 24 horas & Atendimento pelo Aplicativo</li>
+                <li>📉 Dedução fiscal completa no imposto da sua empresa</li>
+            </ul>
+        </div>
+
+        <!-- Formulário com mapeamento exato de inputs -->
+        <form action="/enviar-lead" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+            <div>
+                <label style="display: block; font-size: 13px; font-weight: 600; color: #475569; margin-bottom: 5px;">Nome do Responsável ou Empresa</label>
+                <input type="text" name="nome" required placeholder="Ex: Carlos" style="width: 94%; padding: 11px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px;">
+            </div>
+
+            <div>
+                <label style="display: block; font-size: 13px; font-weight: 600; color: #475569; margin-bottom: 5px;">WhatsApp com DDD</label>
+                <input type="tel" name="telefone" required placeholder="Ex: 11959539845" style="width: 94%; padding: 11px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px;">
+            </div>
+
+            <div>
+                <label style="display: block; font-size: 13px; font-weight: 600; color: #475569; margin-bottom: 5px;">Qual a sua modalidade de CNPJ?</label>
+                <select name="modalidade" required style="width: 100%; padding: 11px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background-color: white;">
+                    <option value="Possuo MEI ativo">Possuo MEI ativo</option>
+                    <option value="Possuo CNPJ (PME)">Possuo CNPJ (PME)</option>
+                    <option value="Não tenho CNPJ (Quero fazer no CPF)">Não tenho CNPJ (Fazer no CPF)</option>
+                </select>
+            </div>
+
+            <button type="submit" style="width: 100%; background-color: #0284c7; color: white; border: none; padding: 15px; font-size: 16px; font-weight: 700; border-radius: 8px; cursor: pointer; margin-top: 5px; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);">
+                💬 Solicitar Tabela via WhatsApp
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
